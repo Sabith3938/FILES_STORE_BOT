@@ -6,11 +6,10 @@ import traceback
 from binascii import (
     Error
 )
-from pyrogram import (
-    Client,
-    enums,
-    filters
-)
+from pyrogram import Client, filters
+from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, Message
+from pyrogram.raw import functions
+
 from pyrogram.errors import (
     UserNotParticipant,
     FloodWait,
