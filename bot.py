@@ -9,7 +9,6 @@ from binascii import (
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, CallbackQuery, Message
 from pyrogram.raw import functions
-from pyrogram import enums
 
 from pyrogram.errors import (
     UserNotParticipant,
