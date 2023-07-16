@@ -39,8 +39,10 @@ Bot = Client(
     in_memory=True,
     bot_token=Config.BOT_TOKEN,
     api_id=Config.API_ID,
-    api_hash=Config.API_HASH
+    api_hash=Config.API_HASH,
+    workdir=Config.WORKDIR  # Add the required 'workdir' parameter
 )
+
 
 
 @Bot.on_message(filters.private)
